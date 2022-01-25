@@ -11,7 +11,7 @@ function App() {
          </main>
     </div>
   );
-}
+};
 
 
 

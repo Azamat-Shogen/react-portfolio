@@ -1,22 +1,90 @@
 .header {
     height: 8em;
-    max-width: 1100px;
+    max-width: 1200px;
     width: 95%;
     margin: 0 auto;
     justify-content: space-between;
-
 }
 
-.navbar {
-    /*height: 100px;*/
-    /*background-color: blue!important;*/
+.nav-div{
+  padding: 10px;
+  border-radius: 5px;
+  top: 10px;
+}
 
+.az {
+    color: #6b94fa;
+    padding: 0 0 0.3em 0;
+    position: relative;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.az:hover {
+    text-decoration: none;
+    color: #95b1f6;
+}
+
+.nav-link {
+    color: var(--clr-primary);
+    padding: 0 0 0.3em 0;
+    position: relative;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.selected{
+    /*color: #3476ee !important;*/
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.nav-link:hover {
+    /*color: var(--clr-primary);*/
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: none;
+}
+.nav-link::before {
+    content: '';
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    /*background-color: var(--clr-primary);*/
+    background-color: #ffd500;
+    transition: width 0.3s ease-in;
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+    width: 82%;
+}
+
+.icon-span {
+    opacity:0.5;
+    transition: 3s ease;
+}
+
+.icon-span:focus,
+.icon-span:hover{
+    opacity:1;
+    transition: 2s ease;
+}
+
+.wolf:hover{
+    color: #f6f10d !important;
+    cursor: pointer;
+    border-radius: 50%;
 
 }
 
 @media (max-width: 600px) {
     .header {
         height: 6em;
-        background-color: pink;
+    }
+    .nav-div{
+
     }
 }
