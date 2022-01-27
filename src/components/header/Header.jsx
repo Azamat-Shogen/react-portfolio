@@ -6,18 +6,22 @@ import Navbar from "../navbar/Navbar";
 
 
 
-const Header = () => {
+const Header = ({theme, toggleTheme}) => {
 
     const [expanded, setExpanded] = useState(true);
-
+    const [wolfMode, setWolfMode] = useState(true)
     const toggle = () => setExpanded(false)
 
+    const toggleMode = () => {
+        toggleTheme();
+        setWolfMode(prev => !prev)
+    }
+    
+    console.log(theme)
 
     return (
         <header className="header">
-
-
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-div">
+         <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-div">
                 <h3>
                     <a href="/" className="az">AZ.</a>
                 </h3>
@@ -32,11 +36,12 @@ const Header = () => {
                         <a className="nav-link  selected" href="#about">ABOUT</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav_link" href="#projects">PROJECTS</a>
+                        <a className="nav-link " href="#skills">SKILLS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link " href="#">SKILLS</a>
+                        <a className="nav-link nav_link" href="#projects">PROJECTS</a>
                     </li>
+                    
                     <li className="nav-item">
                         <a className="nav-link" href="#">CONTACTS</a>
                     </li>
@@ -45,17 +50,21 @@ const Header = () => {
                 <div className="nav-item">
 
 
-                    <span className="icon-span">
+                    <span className="icon-span" 
+                     onClick={toggleMode}
+                    >
+                    {wolfMode ?
                          <GiWolfHowl
                              color=""
                           size="2.5em"
                           className="wolf"
-                         />
-                        {/*<MdOutlineHighlight*/}
-                        {/*    color=""*/}
-                        {/*    size="2.5em"*/}
-                        {/*    className="wolf"*/}
-                        {/*/>*/}
+                         /> :
+                        <MdOutlineHighlight
+                            color=""
+                            size="2.5em"
+                           className="wolf"
+                        />
+                    }
                     </span>
                 </div>
 
