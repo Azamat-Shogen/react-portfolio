@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./header.css";
 import { GiWolfHowl,  } from "react-icons/gi";
 import { MdOutlineHighlight, MdHighlight } from "react-icons/md";
-import Navbar from "../navbar/Navbar";
-
 
 
 const Header = ({theme, toggleTheme}) => {
