@@ -41,9 +41,9 @@ h4 {
   color: var(--clr-fg-alt);
 }
 
-h1 {
-  font-size: 4rem;
-}
+/*h1 {*/
+/*  font-size: 4rem;*/
+/*}*/
 
 h2 {
   font-size: 2rem;
@@ -71,6 +71,6 @@ button {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.6rem;
+    /*font-size: 2.6rem;*/
   }
 }
