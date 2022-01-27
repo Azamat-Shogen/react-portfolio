@@ -29,7 +29,7 @@ const About = () => {
         }}        
       />
       <div></div>
-      <AnimationOnScroll initiallyVisible={true} animateIn="animate__flip">
+      <AnimationOnScroll className="flip" initiallyVisible={true} animateIn="animate__flip">
       <h3>Full-Stack Developer</h3>
       </AnimationOnScroll>
       
@@ -40,12 +40,7 @@ const About = () => {
     <section id="about" style={{width: "100%"}}>
         <div className="container">
             <div className="flex-item1">
-                {/* <h1 className="">
-                    Hi, I'm Azamat.
-                    <br className="" />I'm a Fullstack Developer
-                </h1> */}
                 {greet()}
-               
                 <p className="">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
                     laborum quasi, 
