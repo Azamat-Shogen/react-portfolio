@@ -12,6 +12,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+main{
+  width: 90%;
+  height: 100%;
+  margin: 2% auto;
+}
+
+
 
 .light {
   /*--clr-bg: #fcfcfc;*/
