@@ -1,11 +1,11 @@
 .App {
+  margin: auto;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
-  /*color: var(--clr-fg);*/
-  /*background-color: var(--clr-bg);*/
   background-color: var(--clr-bg);
+  transition: 2s;
 }
 
 .App-logo {
@@ -16,18 +16,21 @@ main{
   width: 90%;
   height: 100%;
   margin: 2% auto;
+  border: 2px solid #ccc;
+  background-color: var(--clr-bg-alt);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
 }
 
 
 
 .light {
-  /*--clr-bg: #fcfcfc;*/
-  --clr-bg: rgba(193, 216, 253, 0.5);
+  --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
-  /*--clr-fg: #555;*/
-  /*--clr-fg-alt: #444;*/
-  /*--clr-primary: #117ef3;*/
-  /*--shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+  --clr-fg: #555;
+  --clr-fg-alt: #444;
+  --clr-primary: #117ef3;
+  --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .dark {
@@ -36,8 +39,7 @@ main{
   --clr-fg: #656599;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-  rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --shadow: 0 10px 40px rgba(231, 226, 226, 0.19), 0 6px 30px rgba(221, 222, 224, 0.23);
 }
 
 
@@ -77,26 +79,3 @@ main{
 .link--icon {
   color: var(--clr-fg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
