@@ -13,11 +13,11 @@ function App() {
   const [theme, toggleTheme] = useContext(Theme);
 
 
+  console.log(theme)
+
   return (
     <div className={`App ${theme}`}>
          <Header theme={theme} toggleTheme={toggleTheme} />
-         {/* <h1>Theme: {theme}</h1>
-      <button onClick={() => toggleTheme()} type="button">change</button> */}
          <main>
              <About />
              <Skills />

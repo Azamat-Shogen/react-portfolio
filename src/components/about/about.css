@@ -1,10 +1,9 @@
 #about{
-    /* background-color: rgb(253, 253, 250); */
-    /* background-color: white; */
     box-sizing: padding-box;
     -moz-box-sizing: padding-box;
     -webkit-box-sizing: padding-box;
     padding-top: 50px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 h1 {
@@ -22,12 +21,10 @@ h1 {
 
 .container {
     display: flex;
-    /* background-color: antiquewhite; */
     position: relative;
-    min-width:95%;
+    min-width:90%;
     height: 90%;
     flex-wrap: nowrap;
-   
     flex-direction: row;
 }
 
@@ -43,7 +40,6 @@ h1 {
 .flex-item1 {
     flex: 60%;
     position: relative;
-    /* background-color: aquamarine; */
     text-align: start;
     align-self: stretch;
 }

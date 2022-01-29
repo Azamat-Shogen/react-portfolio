@@ -1,16 +1,10 @@
 import { ThemeProvider } from "react-switch-theme";
 
+
 const colors = {
-    light: {
-      background: "#fff",
-      color: "#000"
-    },
-    dark: {
-      background: "red",
-      color: "red",
-      
-    }
-  };
+    light:{color: "#000"},
+    dark: {color: "#b4c2ef"}
+}
 
 const activeMode = "light";
 const offlineStorageKey = "react-random-key";
