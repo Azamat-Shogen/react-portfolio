@@ -16,18 +16,18 @@ main{
   width: 90%;
   height: 100%;
   margin: 2% auto;
-  border: 2px solid #ccc;
+  /*border: 2px solid #ccc;*/
   background-color: var(--clr-bg-alt);
   border-radius: 15px;
   box-shadow: var(--shadow);
 }
 
-
-
 .light {
   --clr-bg: #fcfcfc;
-  --clr-bg-alt: #fff;
+  /*--clr-bg-alt: #fff;*/
+  --clr-bg-alt: #e2ecf3;
   --clr-fg: #555;
+  --clr-hr: #90c6e2;
   --clr-fg-alt: #444;
   --clr-primary: #117ef3;
   --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -37,6 +37,7 @@ main{
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #656599;
+  --clr-hr: #eaf6f6;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #90a0d9;
   --shadow: 0 10px 40px rgba(231, 226, 226, 0.19), 0 6px 30px rgba(221, 222, 224, 0.23);
@@ -78,4 +79,17 @@ main{
 
 .link--icon {
   color: var(--clr-fg);
+}
+
+hr {
+  border: dotted var(--clr-hr) 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 100px auto;
+}
+
+@media (max-width: 990px) {
+   .main{
+     width: 100%;
+  }
 }
