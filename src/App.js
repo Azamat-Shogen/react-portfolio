@@ -9,20 +9,19 @@ import themeWrapper from "./ThemeWrapper";
 
 
 function App() {
-
   const [theme, toggleTheme] = useContext(Theme);
 
-
-  console.log(theme)
 
   return (
     <div className={`App ${theme}`}>
          <Header theme={theme} toggleTheme={toggleTheme} />
          <main>
              <About />
+             <hr />
              <Skills />
+             <hr />
              <Projects />
-             
+             <hr />
          </main>
     </div>
   );

@@ -38,7 +38,7 @@ const About = () => {
 
     return (
     <section id="about" style={{width: "100%"}}>
-        <div className="container">
+        <div className="container about-wrapper">
             <div className="flex-item1">
                 {greet()}
                 <p className="">

@@ -2,7 +2,7 @@ import { ThemeProvider } from "react-switch-theme";
 
 
 const colors = {
-    light:{color: "#000"},
+    light:{color: "#4c4a4a"},
     dark: {color: "#b4c2ef"}
 }
 
