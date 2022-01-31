@@ -16,7 +16,7 @@ main{
   width: 90%;
   height: 100%;
   margin: 2% auto;
-  /*border: 2px solid #ccc;*/
+  /*border: 1px solid #ccc;*/
   background-color: var(--clr-bg-alt);
   border-radius: 15px;
   box-shadow: var(--shadow);
@@ -88,8 +88,8 @@ hr {
   margin: 100px auto;
 }
 
-@media (max-width: 990px) {
-   .main{
+@media (max-width: 991px) {
+   main{
      width: 100%;
   }
 }

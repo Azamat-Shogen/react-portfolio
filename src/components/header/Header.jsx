@@ -18,8 +18,8 @@ const Header = ({theme, toggleTheme}) => {
     console.log(theme)
 
     return (
-        <header className="header">
-         <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-div">
+        <header className="header sticky-top">
+         <nav className="navbar navbar-expand-lg  navbar-dark bg-dark nav-div">
                 <h3>
                     <a href="/" className="az">AZ.</a>
                 </h3>
