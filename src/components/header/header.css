@@ -1,16 +1,16 @@
 .header {
-    min-height: 8em;
+    min-height: 5em;
     width: 90%;
     margin: 0 auto;
-    justify-content: space-between;
-    position: relative;
+    /*justify-content: space-between;*/
+    /*position: relative;*/
 }
 
 .nav-div{
-  padding: 10px;
-  border-radius: 5px;
-  top: 10px;
-  margin-bottom: auto;
+    padding: 10px;
+    border-radius: 5px;
+    top: 10px;
+    margin-bottom: auto;
 }
 
 
@@ -119,6 +119,9 @@
     .nav-link:hover::before,
     .nav-link:focus::before {
         width: 12%;
+    }
+    .header {
+        width: 100%;
     }
 }
 
