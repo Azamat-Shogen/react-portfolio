@@ -14,31 +14,16 @@ const Projects = () => {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects-wrapper">
-
-                    {projects.map((project, i) => (
-                        <a href={project.link} key={i}
-                           className="project">
-                        <div className="flipper">
-                            <div className="front">
-                                <img src={project.image} alt="project" />
-                            </div>
-
-                            <div className="back">
-                                <h3>
-                                    {project.subtitle}
-                                </h3>
-                                <h2>{project.title}</h2>
-                                <p>{project.description}</p>
-                            </div>
-                        </div>
-                        </a>
-                    ))}
-                    {/*<div className="cj">cj</div>*/}
-                    {/*<div className="cj">cj</div>*/}
-                    {/*<div className="cj">cj</div>*/}
-
-
-
+                  {projects.map((project, i)=> (
+                      <div className="project">
+                      <div className="flipper">
+                          <div className="front">
+                          <img src={project.image} alt="project" />
+                          </div>
+                          <div className="back">back</div>
+                      </div>
+                      </div>
+                  ))}
                 </div>
             </div>
 
@@ -47,3 +32,22 @@ const Projects = () => {
 }
 
 export default Projects;
+
+// {projects.map((project, i) => (
+//     <a href={project.link} key={i}
+//        className="project">
+//     <div className="flipper">
+//         <div className="front">
+//             <img src={project.image} alt="project" />
+//         </div>
+
+//         <div className="back">
+//             <h3>
+//                 {project.subtitle}
+//             </h3>
+//             <h2>{project.title}</h2>
+//             <p>{project.description}</p>
+//         </div>
+//     </div>
+//     </a>
+// ))}
