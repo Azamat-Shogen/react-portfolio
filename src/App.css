@@ -4,28 +4,83 @@
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
-  background-color: var(--clr-bg);
+  /*background-color: var(--clr-bg);*/
+  /*background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+  /*background: linear-gradient(to top, #d3e1fa 0%, #dde0e3 100%);*/
+  /*background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
+  /*background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);*/
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   transition: 2s;
 }
+
+/*.App {*/
+/*  height:100%;*/
+/*  width: 100%;*/
+/*  !*background: linear-gradient(#0F2129, #7b687e);*!*/
+/*  !*background: linear-gradient(#0F2129, #47334A);*!*/
+/*  overflow:hidden;*/
+
+/*  --s:1px 2px; !* size of drop of water*!*/
+/*  --c:#ccc;    !* color of the water*!*/
+/*  --a:-7deg;   !* control the skewing*!*/
+/*  --w:53px;    !* width of the pattern*!*/
+/*  --h:55px;    !* height of the pattern*!*/
+
+/*  --rad:radial-gradient(var(--s),var(--c) 100%,transparent 100%)*/
+/*}*/
+/*.App:before,*/
+/*.App:after{*/
+/*  content:"";*/
+/*  position: absolute;*/
+/*  right: -20%;*/
+/*  left: -20%;*/
+/*  top: 6%;*/
+
+/*  height:calc(100% + var(--h) + 10px); !* should be bigger than (100% + var(--h))*!*/
+/*  background:*/
+/*          var(--rad) -12px 3px,*/
+/*          var(--rad) 17px 0,*/
+/*          var(--rad) 6px  12px,*/
+/*          var(--rad) 24px 23px,*/
+/*          var(--rad) 39px 30px,*/
+/*          var(--rad) 5px  43px;*/
+/*  background-size:var(--w) var(--h);*/
+/*  animation:rain 0.2s linear infinite;*/
+/*  transform:skew(var(--a));*/
+/*}*/
+/*.App:after {*/
+/*  --h:70px;*/
+/*  --w:61px;*/
+/*}*/
+/*@keyframes rain{*/
+/*  to {*/
+/*    transform:skew(var(--a)) translateY(var(--h)); !* Same as the height of the background-size *!*/
+/*  }*/
+/*}*/
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-main{
-  width: 90%;
-  height: 100%;
-  margin: 2% auto;
-  /*border: 1px solid #ccc;*/
-  background-color: var(--clr-bg-alt);
-  border-radius: 15px;
-  box-shadow: var(--shadow);
-}
+/*main{*/
+/*  width: 90%;*/
+/*  height: 100%;*/
+/*  margin: 2% auto;*/
+/*  border: none;*/
+/*  !*border: 1px solid #ccc;*!*/
+/*  !*background-color: var(--clr-bg-alt);*!*/
+/*  !*background-image: var(--clr-bg-alt);*!*/
+/*  background: linear-gradient(to top, #f2f6f6 40%, #eeeef3 10%);*/
+
+/*  !*border-radius: 15px;*!*/
+/*  box-shadow: var(--shadow);*/
+/*}*/
 
 .light {
   --clr-bg: #fcfcfc;
   /*--clr-bg-alt: #fff;*/
-  --clr-bg-alt: #e2ecf3;
+  /*--clr-bg-alt: #e2ecf3;*/
+  --clr-bg-alt: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
   --clr-fg: #555;
   --clr-hr: #90c6e2;
   --clr-fg-alt: #444;
