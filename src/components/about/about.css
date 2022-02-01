@@ -4,8 +4,13 @@
     -webkit-box-sizing: padding-box;
     padding-top: 100px;
     border-radius: 15px 15px 0px 0px;
-    /*background: linear-gradient(to top, #949ba0 0%, #f4f6f8 100%);*/
+    /* background: linear-gradient(to top, #949ba0 0%, #f4f6f8 100%); */
+    /* background: linear-gradient(to top, #949ba0 0%, #f4f6f8 100%); */
+    /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+    background: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
 
+   
+    
 }
 
 #about {
