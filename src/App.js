@@ -6,6 +6,7 @@ import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import themeWrapper from "./ThemeWrapper";
+import Contacts from "./components/contacts/Contacts";
 
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
     <div className={`App ${theme}`}>
          <Header theme={theme} toggleTheme={toggleTheme} />
          <main>
+
              <About />
              <hr />
              <Skills />
              <hr />
              <Projects />
              <hr />
+             <Contacts />
          </main>
     </div>
   );

@@ -38,12 +38,13 @@ const About = () => {
 
     return (
     <section id="about" style={{width: "100%"}}>
+
         <div className="container about-wrapper">
             <div className="flex-item1">
                 {greet()}
                 <p className="">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                    laborum quasi, 
+                    laborum quasi,
                     <br className="" />
                     incidunt dolore iste nostrum cupiditate voluptas?
                     Laborum, voluptas natus?
