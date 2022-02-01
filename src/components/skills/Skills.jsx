@@ -24,6 +24,7 @@ const Skills = () => {
                 ))}
             </div>
             </div>
+            <hr />
         </section>
     )
 }

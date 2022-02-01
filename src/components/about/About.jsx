@@ -32,7 +32,6 @@ const About = () => {
       <AnimationOnScroll className="flip" initiallyVisible={true} animateIn="animate__flip">
       <h3>Full-Stack Developer</h3>
       </AnimationOnScroll>
-      
       </div>
     )
 
@@ -74,6 +73,7 @@ const About = () => {
 
             </div>
         </div>
+        <hr />
     </section>
     )
 };
