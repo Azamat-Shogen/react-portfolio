@@ -24,7 +24,7 @@ const Skills = () => {
                 ))}
             </div>
             </div>
-            <hr />
+            <hr className="hr-dotted"/>
         </section>
     )
 }

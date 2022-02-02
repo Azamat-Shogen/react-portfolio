@@ -78,8 +78,23 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.back h3 {
+    margin-top: 5px;
+}
+.back p {
+    padding: 1px 10px;
+    font-size: 14px;
+}
 
+.view-icon {
+  width: 40px;
+    height: 30px;
+    color: #92bbec;
+}
 
+.view-icon:hover {
+    color: #117ef3;
+}
 
 .front > img {
     width: 100%;
@@ -94,8 +109,9 @@
 }
 
 .back {
-  background-color: dodgerblue;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfd;
   transform: rotateY(180deg);
 }
 

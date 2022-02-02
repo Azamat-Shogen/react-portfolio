@@ -87,7 +87,7 @@
   color: var(--clr-fg);
 }
 
-hr {
+.hr-dotted{
   border: dotted var(--clr-hr) 6px;
   border-bottom: none;
   width: 5%;

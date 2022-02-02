@@ -1,0 +1,28 @@
+.scroll-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    outline: none!important;
+    bottom: 20px;
+    right: 30px;
+}
+
+.top-icon {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    color: #35c6e7;
+    transition: 1s;
+}
+
+.top-icon:hover {
+    color: #208d32;
+    font-weight: bold;
+}
+
