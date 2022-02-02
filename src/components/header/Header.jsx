@@ -41,13 +41,11 @@ const Header = ({theme, toggleTheme}) => {
                     </li>
                     
                     <li className="nav-item">
-                        <a className="nav-link" href="#">CONTACTS</a>
+                        <a className="nav-link" href="#contact">CONTACT</a>
                     </li>
 
                 </ul>
                 <div className="nav-item">
-
-
                     <span className="icon-span" 
                      onClick={toggleMode}
                     >

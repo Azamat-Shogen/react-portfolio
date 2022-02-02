@@ -1,12 +1,12 @@
 import React from "react";
-import "./constacts.css"
+import "./contact.css"
 
 
-const Contacts = () => {
+const Contact = () => {
 
     return (
-        <section>
-            <h1>Contacts</h1>
+        <section id="contact">
+            <h1>Contact</h1>
             <div>
                 <p>
                     Where does it come from?
@@ -19,4 +19,4 @@ const Contacts = () => {
     )
 }
 
-export default Contacts
+export default Contact

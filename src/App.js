@@ -7,7 +7,7 @@ import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import Top from "./components/top/Top";
 import themeWrapper from "./ThemeWrapper";
-import Contacts from "./components/contacts/Contacts";
+import Contact from "./components/contact/Contact";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
              <Skills />
              <Projects />
              <hr />
-             <Contacts />
+             <Contact />
          </main>
          <Top />
     </div>
