@@ -20,7 +20,7 @@ function App() {
              <About />
              <Skills />
              <Projects />
-             <hr />
+             <hr className="hr-dotted" />
              <Contact />
          </main>
          <Top />

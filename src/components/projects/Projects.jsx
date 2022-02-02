@@ -1,6 +1,8 @@
 import React from "react";
 import {FaCode} from "react-icons/fa";
 import {projects} from "../../data";
+import {BsEyeFill} from "react-icons/bs"
+import {BsFillArrowUpRightSquareFill} from "react-icons/bs"
 import "./projects.css";
 
 
@@ -20,7 +22,14 @@ const Projects = () => {
                           <div className="front">
                           <img src={project.image} alt="project" />
                           </div>
-                          <div className="back">back</div>
+                          <div className="back">
+                              <h3>{project.title}</h3>
+                              <h4>{project.subtitle}</h4>
+                              <p>{project.description}</p>
+                              <a href={project.link}>
+                                  <BsFillArrowUpRightSquareFill className="view-icon"  />
+                              </a>
+                          </div>
                       </div>
                       </div>
                   ))}
@@ -32,22 +41,3 @@ const Projects = () => {
 }
 
 export default Projects;
-
-// {projects.map((project, i) => (
-//     <a href={project.link} key={i}
-//        className="project">
-//     <div className="flipper">
-//         <div className="front">
-//             <img src={project.image} alt="project" />
-//         </div>
-
-//         <div className="back">
-//             <h3>
-//                 {project.subtitle}
-//             </h3>
-//             <h2>{project.title}</h2>
-//             <p>{project.description}</p>
-//         </div>
-//     </div>
-//     </a>
-// ))}

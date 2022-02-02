@@ -18,15 +18,15 @@ export const projects = [
 
     {
         title: "UFC",
-        subtitle: "React Redux",
-        description: "React, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
+        subtitle: "Ufc rankings api",
+        description: "React, React-bootstrap, Python, Django, Docker, AWS",
         image: "./project-2.gif",
         link: "https://ufc-rankings.netlify.app/"
     },
     {
         title: "Card Trick",
-        subtitle: "Mern Stack",
-        description: "React, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
+        subtitle: "Game",
+        description: "JavaScript, React, Redux",
         image: "./project-3.gif",
         link: "https://c-game-az.netlify.app/"
     },
@@ -34,22 +34,22 @@ export const projects = [
     {
         title: "Imc Permits Portal",
         subtitle: "Mern Stack",
-        description: "React, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
+        description: "React, Redux, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
         image: "./project-1.gif",
         link: "https://imc-permits-portal.netlify.app/"
     },
 
     {
-        title: "Console Game",
-        subtitle: "Mern Stack",
-        description: "React, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
+        title: "Card Trick ||",
+        subtitle: "Console Game",
+        description: "Python",
         image: "./project-5.gif",
         link: "https://github.com/Azamat-Shogen/card_trick_python"
     },
     {
         title: "Progress Bar",
-        subtitle: "Mern Stack",
-        description: "React, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
+        subtitle: "Mock API",
+        description: "React",
         image: "./project-4.gif",
         link: "https://survey-demo.netlify.app/"
     }
