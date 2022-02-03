@@ -3,7 +3,7 @@
     -moz-box-sizing: padding-box;
     -webkit-box-sizing: padding-box;
     padding-top: 100px;
-    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background: var(--skills-bg);
 }
 
 .chip {
@@ -16,6 +16,7 @@
 
 
 .light {
+    --skills-bg: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     /*--clr-chip: #181817;*/
     --clr-chip: #0771ab;
     --clr-skill-txt: white;
@@ -23,6 +24,7 @@
 }
 
 .dark {
+    --skills-bg:  #23283e;
    --clr-chip: #c3b044;
     --clr-skill-txt: white;
     --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 6px rgba(0,0,0,0.23);

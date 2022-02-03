@@ -4,7 +4,7 @@
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
-  background: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
+  background: var(--clr-bg);
   transition: 2s;
 }
 
@@ -13,22 +13,21 @@
   height: 40vmin;
   pointer-events: none;
 }
-/*main{*/
-/*  width: 90%;*/
-/*  height: 100%;*/
-/*  margin: 2% auto;*/
-/*  border: none;*/
-/*  !*border: 1px solid #ccc;*!*/
-/*  !*background-color: var(--clr-bg-alt);*!*/
-/*  !*background-image: var(--clr-bg-alt);*!*/
-/*  background: linear-gradient(to top, #f2f6f6 40%, #eeeef3 10%);*/
+main{
+  width: 90%;
+  height: 100%;
+  margin: 3% auto;
+  /*border: 1px solid #ccc;*/
+  /*background-color: var(--clr-bg-alt);*/
+  /*background-image: var(--clr-bg-alt);*/
+  /*background: linear-gradient(to top, #f2f6f6 40%, #eeeef3 10%);*/
 
-/*  !*border-radius: 15px;*!*/
-/*  box-shadow: var(--shadow);*/
-/*}*/
+  /*border-radius: 15px;*/
+  /*box-shadow: var(--shadow);*/
+}
 
 .light {
-  --clr-bg: #fcfcfc;
+  --clr-bg: linear-gradient(to top, #e6e9ea 0%, #fff1eb 100%);
   /*--clr-bg-alt: #fff;*/
   /*--clr-bg-alt: #e2ecf3;*/
   --clr-bg-alt: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
