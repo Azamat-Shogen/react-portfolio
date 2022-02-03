@@ -6,7 +6,7 @@
     -moz-box-sizing: padding-box;
     -webkit-box-sizing: padding-box;
     padding-top: 100px;
-    background: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
+    background: var(--projects-bg)
 }
 
 .projects-header > h1 {
@@ -25,10 +25,11 @@
     --clr-code: #0771ab;
     --clr-skill-txt: white;
     ----shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 6px rgba(0,0,0,0.23);
-
+    --projects-bg: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
 }
 
 .dark {
+    --projects-bg: #23283e;
     --clr-code: #c3b044;
     --clr-skill-txt: white;
     --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 6px rgba(0,0,0,0.23);
