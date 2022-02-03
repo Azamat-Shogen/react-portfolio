@@ -17,11 +17,9 @@ main{
   width: 90%;
   height: 100%;
   margin: 3% auto;
-  /*border: 1px solid #ccc;*/
   /*background-color: var(--clr-bg-alt);*/
   /*background-image: var(--clr-bg-alt);*/
   /*background: linear-gradient(to top, #f2f6f6 40%, #eeeef3 10%);*/
-
   /*border-radius: 15px;*/
   /*box-shadow: var(--shadow);*/
 }

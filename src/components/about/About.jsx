@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+export {about} from "../../data";
 import ReactTypingEffect from 'react-typing-effect';
 import "./about.css"
+import {about} from "../../data";
 
 const About = () => {
 
@@ -37,17 +39,10 @@ const About = () => {
 
     return (
     <section id="about" style={{width: "100%"}}>
-
         <div className="container about-wrapper">
             <div className="flex-item1">
                 {greet()}
-                <p className="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                    laborum quasi,
-                    <br className="" />
-                    incidunt dolore iste nostrum cupiditate voluptas?
-                    Laborum, voluptas natus?
-                </p>
+                <p className="">{about}</p>
                 <div className="">
                     <a
                         href="#contact"
