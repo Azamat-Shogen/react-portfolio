@@ -35,6 +35,7 @@ const Projects = () => {
                   ))}
                 </div>
             </div>
+            <hr className="hr-dotted" />
     
         </section>
     )

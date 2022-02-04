@@ -1,19 +1,33 @@
 import React from "react";
 import "./contact.css"
+import {BsPeopleFill} from "react-icons/bs";
 
 
 const Contact = () => {
 
     return (
         <section id="contact">
-            <h1>Contact</h1>
+            <div className="contact-header">
+                <BsPeopleFill className="code-icon"/>
+                <h1>Contact</h1>
+            </div>
             <div>
-                <p>
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                </p>
+                <form className="connect-form col-lg-4 col-md-6 col-sm-12" method="POST">
+                    <h4 className="pb-3">Connect with me!</h4>
+                    <div className="form-group col">
+                        <input type="text" className="form-control" placeholder="Name" />
+                    </div>
+                    <div className="form-group col">
+                        <input type="text" className="form-control" placeholder="First name" />
+                    </div>
+                    <div className="form-group col">
+                        <textarea className="form-control" name="area" id="area" rows="3" placeholder="Message..." />
+                    </div>
+                    <div className="form-group col">
+                        <button type="button" className="btn btn-primary contact-btn col-lg-12 p-3">SUBMIT</button>
+                    </div>
+                </form>
             </div>
         </section>
     )
