@@ -1,7 +1,7 @@
 #projects {
     margin-top: -100px;
     width: 100%;
-    height: 900px;
+    height: auto;
     box-sizing: padding-box;
     -moz-box-sizing: padding-box;
     -webkit-box-sizing: padding-box;
@@ -66,7 +66,8 @@
     height: 170px;
     border-radius: 5px;
     margin: 1em;
-    box-shadow: var(--shadow)
+    box-shadow: var(--shadow);
+    transition: 2s;
 }
 
 .project:hover {
@@ -128,6 +129,7 @@
   flex-direction: column;
   background-color: var(--clr-back);
   transform: rotateY(180deg);
+
 }
 
 @media (max-width: 900px) {

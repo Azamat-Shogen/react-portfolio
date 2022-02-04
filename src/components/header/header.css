@@ -55,7 +55,6 @@
 }
 
 .nav-link:hover {
-    /*color: var(--clr-primary);*/
     color: #ffffff !important;
     text-shadow: 2px 2px 4px #000000;
     text-decoration: none;
