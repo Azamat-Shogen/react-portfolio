@@ -76,7 +76,6 @@
 }
 
 .item1, item2 {
-    /*background-color: #f1f1f1;*/
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -85,24 +84,45 @@
 }
 
 .flex-item1 {
-    flex: 60%;
+    flex: 50%;
     position: relative;
+    max-height: 389px;
     top: -10px;
+    flex-shrink: 1;
     text-align: start;
     align-self: stretch;
 }
 
-.flex-item1 p {
-    max-width: 70%;
-}
-
 .flex-item2 {
     position: relative;
-    flex: 20%;
+    flex: 50%;
+    flex-shrink: 1;
     margin-top: 0
 }
 
+.hero {
+    width: 100%;
+    max-height: 389px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.flex-item1 h1 {
+    margin-top: -30px;
+}
+
+.flex-item1 p {
+    max-width: 90%;
+}
+
+
 @media (max-width: 800px) {
+    .flex-item2{
+        padding-top: 4em;
+    }
+    #about{
+        padding-top: 50px;
+    }
     .container {
         flex-direction: column;
     }

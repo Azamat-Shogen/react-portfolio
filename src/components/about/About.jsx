@@ -59,7 +59,7 @@ const About = () => {
             <div className="flex-item2">
             <AnimationOnScroll animateIn="animate__fadeInRightBig">
                 <img
-                     className="object-cover object-center rounded"
+                     className="object-cover object-center rounded hero"
                      alt="hero"
                      src="./kendoka.svg"
                     // src="https://www.freeiconspng.com/uploads/profile-icon-1.png" width="350" height="350"
