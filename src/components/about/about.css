@@ -51,7 +51,7 @@
 
 .light{
     --drop: #ccc;
-    --about-bg: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);;
+    --about-bg: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
 }
 .dark {
     --drop: #4d5366;
@@ -106,6 +106,7 @@
     height: 100%;
     object-fit: contain;
 }
+
 
 .flex-item1 h1 {
     margin-top: -30px;

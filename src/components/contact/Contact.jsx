@@ -8,7 +8,7 @@ const Contact = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert("✨...Submit feature has not been added yet...✨ \n✨...Please connect with me on Linkedin: 👉")
+        alert("✨Please connect with me on Linkedin: 🚀")
     }
 
     return (
@@ -17,7 +17,7 @@ const Contact = () => {
                 <BsPeopleFill className="code-icon"/>
                 <h1>Contact</h1>
             </div>
-            <div>
+            <div >
                 <form className="connect-form col-lg-4 col-md-6 col-sm-12" method="POST"
                  onSubmit={handleSubmit}
                 >
@@ -37,6 +37,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
+            <hr className="hr-dotted"/>
         </section>
     )
 }

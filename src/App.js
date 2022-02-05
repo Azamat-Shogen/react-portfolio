@@ -8,6 +8,7 @@ import Skills from "./components/skills/Skills";
 import Top from "./components/top/Top";
 import themeWrapper from "./ThemeWrapper";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
              <Projects />
              <Contact />
          </main>
-         <Top />
+        <Footer />
+        <Top />
     </div>
   );
 };

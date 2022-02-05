@@ -1,0 +1,28 @@
+footer {
+   width: 100%;
+    padding: 80px 0px 0px 0px;
+    background: var(--footer-bg);
+    margin: auto;
+}
+
+.footer-div {
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    background-color: #343a40;
+    border-radius: 5px;
+}
+
+.light {
+    --footer-bg: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
+}
+
+.dark {
+    --footer-bg: #23283e;
+}
+
+@media (max-width: 900px) {
+    .footer-div{
+        width: 100%;
+    }
+}
