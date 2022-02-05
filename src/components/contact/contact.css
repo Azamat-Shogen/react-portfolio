@@ -29,3 +29,7 @@
 .contact-btn {
     background-color: #5d53b5;
 }
+
+#contact hr {
+   margin-bottom: 0;
+}

@@ -30,7 +30,7 @@ const About = () => {
           );
         }}        
       />
-      <div></div>
+      <div> </div>
       <AnimationOnScroll className="flip" initiallyVisible={true} animateIn="animate__flip">
       <h3>Full-Stack Developer</h3>
       </AnimationOnScroll>
@@ -44,14 +44,10 @@ const About = () => {
                 {greet()}
                 <p className="">{about}</p>
                 <div className="">
-                    <a
-                        href="#contact"
-                        className="d-inline-flex">
+                    <a href="#contact" className="d-inline-flex">
                         Contact Me
                     </a>
-                    <a
-                        href="#projects"
-                        className="">
+                    <a href="#projects" className="">
                         Projects
                     </a>
                 </div>
@@ -61,11 +57,8 @@ const About = () => {
                 <img
                      className="object-cover object-center rounded hero"
                      alt="hero"
-                     src="./kendoka.svg"
-                    // src="https://www.freeiconspng.com/uploads/profile-icon-1.png" width="350" height="350"
-                />
+                     src="./kendoka.svg" />
             </AnimationOnScroll>
-
             </div>
         </div>
         <hr className="hr-dotted" />
