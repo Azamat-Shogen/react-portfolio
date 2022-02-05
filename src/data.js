@@ -14,7 +14,13 @@ export const skills = [
     "TypeScript"
 ];
 
-export const about = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+export const about = {
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer " +
+        "took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, " +
+        "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s "
+}
+
 
 export const projects = [
 
@@ -55,4 +61,10 @@ export const projects = [
         image: "./project-4.gif",
         link: "https://survey-demo.netlify.app/"
     }
-]
+];
+
+export const footer = {
+    email: "azshog@gmail.com",
+    git: "https://github.com/Azamat-Shogen?tab=overview&from=2022-02-01&to=2022-02-05",
+    linkedin: "https://www.linkedin.com/in/azamat101/"
+}

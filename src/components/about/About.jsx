@@ -7,6 +7,8 @@ import {about} from "../../data";
 
 const About = () => {
 
+    const {text} = about
+
     const greet = () => (  
         <div className="type-div">
      <ReactTypingEffect style={{}}
@@ -42,7 +44,7 @@ const About = () => {
         <div className="container about-wrapper">
             <div className="flex-item1">
                 {greet()}
-                <p className="">{about}</p>
+                <p className="">{text}</p>
                 <div className="">
                     <a href="#contact" className="d-inline-flex">
                         Contact Me
