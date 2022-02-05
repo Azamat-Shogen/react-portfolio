@@ -8,9 +8,10 @@ footer {
 .footer-div {
     margin: auto;
     width: 90%;
-    height: 100px;
+    height: 150px;
     background-color: #343a40;
     border-radius: 5px;
+    padding-top: 30px;
 }
 
 .light {
@@ -19,6 +20,58 @@ footer {
 
 .dark {
     --footer-bg: #23283e;
+}
+
+.footer-icons {
+  display: inline;
+}
+
+.footer-icons a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: .3s ease;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    left: 0;
+}
+
+.footer-icons a:hover {
+    color: #fff;
+    left: 5px;
+}
+
+.footer-icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    color: white;
+    border-radius: 50px;
+    padding: 2px;
+    transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #394c70;
+    transform: scale(1.2);
+}
+.copyright {
+    position: relative;
+    top: 1.5em;
+}
+.copyright-icon {
+    position: relative;
+    top: -2px;
+    color: #eeebeb;
+    width: 20px;
+    height: 20px;
+}
+
+.copy-text{
+    margin: 5px;
+    color: #b3adad;
+    font-size: 14px;
 }
 
 @media (max-width: 900px) {
