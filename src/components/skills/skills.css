@@ -13,11 +13,8 @@
     color: var(--clr-chip);
 }
 
-
-
 .light {
     --skills-bg: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    /*--clr-chip: #181817;*/
     --clr-chip: #0771ab;
     --clr-skill-txt: white;
     --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 6px rgba(0,0,0,0.23);
