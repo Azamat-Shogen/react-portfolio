@@ -5,7 +5,9 @@ import ReactTypingEffect from 'react-typing-effect';
 import "./about.css"
 import {about} from "../../data";
 import {footer} from "../../data";
-import {BsGithub, BsLinkedin} from "react-icons/bs";
+import {BsGithub, BsLinkedin, BsDownload} from "react-icons/bs";
+import {MdOutlineFileDownload} from "react-icons/md";
+
 
 const About = () => {
 
@@ -65,7 +67,9 @@ const About = () => {
                        </div>
                    </div>
                    <div className="resume">
-                      <button className="btn btn-info">Resume</button>
+                      <button className="btn">
+                          <MdOutlineFileDownload className="download-icon" />
+                          Resume</button>
                    </div>
                 </div>
             </div>

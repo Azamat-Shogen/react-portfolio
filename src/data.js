@@ -27,14 +27,14 @@ export const projects = [
         title: "UFC",
         subtitle: "Ufc rankings api",
         description: "React, React-bootstrap, Python, Django, Docker, AWS",
-        image: "./project-2.gif",
+        image: "./projects/project-2.gif",
         link: "https://ufc-rankings.netlify.app/"
     },
     {
         title: "Card Trick",
         subtitle: "Game",
         description: "JavaScript, React, Redux",
-        image: "./project-3.gif",
+        image: "./projects/project-3.gif",
         link: "https://c-game-az.netlify.app/"
     },
 
@@ -42,7 +42,7 @@ export const projects = [
         title: "Imc Permits Portal",
         subtitle: "Mern Stack",
         description: "React, Redux, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
-        image: "./project-1.gif",
+        image: "./projects/project-1.gif",
         link: "https://imc-permits-portal.netlify.app/"
     },
 
@@ -50,14 +50,14 @@ export const projects = [
         title: "Card Trick ||",
         subtitle: "Console Game",
         description: "Python",
-        image: "./project-5.gif",
+        image: "./projects/project-5.gif",
         link: "https://github.com/Azamat-Shogen/card_trick_python"
     },
     {
         title: "Progress Bar",
         subtitle: "Mock API",
         description: "React",
-        image: "./project-4.gif",
+        image: "./projects/project-4.gif",
         link: "https://survey-demo.netlify.app/"
     }
 ];
@@ -66,4 +66,25 @@ export const footer = {
     email: "azshog@gmail.com",
     git: "https://github.com/Azamat-Shogen?tab=overview&from=2022-02-01&to=2022-02-05",
     linkedin: "https://www.linkedin.com/in/azamat101/"
+}
+
+async function postData(url = "", data = {}){
+    const response = await fetch(url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+    return response.json();
+}
+
+
+export const contactValidation = ({...args}) => {
+    const {name, email, message} = args;
+    if (name.trim().length < 2 ) return {error: "Name is too short", success: null};
+    if (email.trim().length < 5) return {error: "Not a valid email", success: null};
+    if (message.trim().length < 2) return {error: "At least 2 characters required", success: null};
+    return {error: null, success: "This is just a test, please email me or connect with me on Linkedin."}
 }

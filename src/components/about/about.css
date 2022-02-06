@@ -53,10 +53,14 @@
 .light{
     --drop: #ccc;
     --about-bg: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
+    --btn-clr: #5190ca;
+    --btn-hover-clr: #1e65a5;
 }
 .dark {
     --drop: #4d5366;
     --about-bg: linear-gradient(-225deg, #121312 0%, #445766 48%, #8192a7 100%);
+    --btn-clr: #333d4c;
+    --btn-hover-clr: #242426;
 }
 
 .type-div {
@@ -178,16 +182,28 @@
     flex: 50%;
 }
 .resume > button {
+    position: relative;
     width: 150px;
     margin-top: 2em;
     padding: 0.8em;
-    background-color: #4d5366;
+    color: snow;
+    background-color: var(--btn-clr);
     outline: none;
     border: none;
+    transition: 0.5s ease-in;
 }
 
 .resume > button:hover {
-    background-color: #111111;
+    background-color: var(--btn-hover-clr);
+    transform: scale(1.1);
+    color: snow;
+}
+
+.download-icon{
+    background-color: transparent;
+    float: left;
+    width: 25px;
+    height: 25px;
 }
 
 @media (max-width: 800px) {
