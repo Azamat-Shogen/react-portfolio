@@ -4,10 +4,13 @@ export {about} from "../../data";
 import ReactTypingEffect from 'react-typing-effect';
 import "./about.css"
 import {about} from "../../data";
+import {footer} from "../../data";
+import {BsGithub, BsLinkedin} from "react-icons/bs";
 
 const About = () => {
 
     const {text} = about
+    const {git, linkedin} = footer;
 
     const greet = () => (  
         <div className="type-div">
@@ -40,18 +43,30 @@ const About = () => {
     )
 
     return (
-    <section id="about" style={{width: "100%"}}>
+    <section id="about">
         <div className="container about-wrapper">
             <div className="flex-item1">
                 {greet()}
                 <p className="">{text}</p>
-                <div className="">
-                    <a href="#contact" className="d-inline-flex">
-                        Contact Me
-                    </a>
-                    <a href="#projects" className="">
-                        Projects
-                    </a>
+                <div className="contact-details">
+                   <div className="details">
+                       <h4>Contact Details:</h4>
+                       <span className="about-contact-text">Azamat Shogen<br/>
+                       North Miami Beach, FL<br/>
+                           azshog@gmail.com
+                       </span> <br/>
+                       <div className="about-icons">
+                           <a href={git} style={{hover:{color: "blue"}}}>
+                               <BsGithub className="about-icon" />
+                           </a>
+                           <a href={linkedin}>
+                               <BsLinkedin className="about-icon"/>
+                           </a>
+                       </div>
+                   </div>
+                   <div className="resume">
+                      <button className="btn btn-info">Resume</button>
+                   </div>
                 </div>
             </div>
             <div className="flex-item2">
@@ -62,6 +77,7 @@ const About = () => {
                      src="./kendoka.svg" />
             </AnimationOnScroll>
             </div>
+
         </div>
         <hr className="hr-dotted" />
     </section>
