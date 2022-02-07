@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {BsPeopleFill} from "react-icons/bs";
-import {contactValidation} from "../../data";
 import { ToastContainer, toast } from 'react-toastify';
+import {contactValidation, sendData} from "./utils";
 import 'react-toastify/dist/ReactToastify.css';
 import "./contact.css"
 
@@ -10,9 +10,8 @@ const Contact = () => {
     const [data, setData] = useState({name:  "", email: "", message: ""})
     const {name, email, message} = data;
 
-    const callSuccess = () => toast.success("This is just a demo.", {
-      theme: "colored"
-    });
+    const callSuccess = (success) => toast.success(success, {theme: "colored"});
+    const callFailure = (error) => toast.error(error, {theme: "colored"})
 
     const handleChange = (name) => (event) => {
        setData({...data, [name]: event.target.value})
@@ -21,8 +20,13 @@ const Contact = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        callSuccess();
-        console.log(data)
+        const {error, success} = contactValidation(data);
+        if(error){ callFailure(error)}
+        else {
+            sendData(data)
+            callSuccess(success);
+            setData({...data, name: "", email: "", message: ""});
+        }
     }
 
     return (
@@ -46,7 +50,7 @@ const Contact = () => {
                         />
                     </div>
                     <div className="form-group col">
-                        <input type="email" className="form-control" name="email" placeholder="email"
+                        <input type="text" className="form-control" name="email" placeholder="email"
                          onChange={handleChange("email")} value={email}
                         />
                     </div>

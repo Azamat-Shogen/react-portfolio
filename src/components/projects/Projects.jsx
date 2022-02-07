@@ -16,8 +16,8 @@ const Projects = () => {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects-wrapper">
-                  {projects.map((project, i)=> (
-                      <div className="project">
+                  {projects.map((project, index)=> (
+                      <div className="project" key={index}>
                       <div className="flipper">
                           <div className="front">
                           <img src={project.image} alt="project" />

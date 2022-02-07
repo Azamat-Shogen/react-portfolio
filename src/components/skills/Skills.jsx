@@ -16,8 +16,8 @@ const Skills = () => {
             </div>
 
             <div className="skills-wrapper">
-                {skills.map(skill => (
-                    <div className="skill">
+                {skills.map((skill, index) => (
+                    <div className="skill" key={index}>
                         <GiStarShuriken className="shuriken" />
                         <p>{skill}</p>
                     </div>

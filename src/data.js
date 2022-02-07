@@ -81,10 +81,3 @@ async function postData(url = "", data = {}){
 }
 
 
-export const contactValidation = ({...args}) => {
-    const {name, email, message} = args;
-    if (name.trim().length < 2 ) return {error: "Name is too short", success: null};
-    if (email.trim().length < 5) return {error: "Not a valid email", success: null};
-    if (message.trim().length < 2) return {error: "At least 2 characters required", success: null};
-    return {error: null, success: "This is just a test, please email me or connect with me on Linkedin."}
-}

@@ -1,54 +1,48 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import withRouter from "../../withRouter";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 export {about} from "../../data";
-import ReactTypingEffect from 'react-typing-effect';
-import "./about.css"
 import {about} from "../../data";
 import {footer} from "../../data";
-import {BsGithub, BsLinkedin, BsDownload} from "react-icons/bs";
+import {BsGithub, BsLinkedin} from "react-icons/bs";
 import {MdOutlineFileDownload} from "react-icons/md";
+import "./about.css"
+import Greet from "./Greet";
 
 
-const About = () => {
-
+const About = (props) => {
     const {text} = about
     const {git, linkedin} = footer;
+    const [resumeData, setResumeData] = useState({});
 
-    const greet = () => (  
-        <div className="type-div">
-     <ReactTypingEffect style={{}}
-        text={["Hi, I'm Azamat!"]}
-        cursor=""
-        cursorRenderer={cursor => <h1>{cursor}</h1>}
-        displayTextRenderer={(text, i) => {
-          return (
-            <h1>
-              {text.split('').map((char, i) => {
-                const key = `${i}`;
-                return (
-                  <span
-                    key={key}
-                    style={i%1 === 0 ? { color: "#5178d9"} : {}}
-                  >{char}</span>
-                );
-              })}
-             
-            </h1>
-          );
-        }}        
-      />
-      <div> </div>
-      <AnimationOnScroll className="flip" initiallyVisible={true} animateIn="animate__flip">
-      <h3>Full-Stack Developer</h3>
-      </AnimationOnScroll>
-      </div>
-    )
+
+    console.log('props are: ', props)
+
+    const downloadResume = () => {
+        if(resumeData.hasOwnProperty("resume-link")){
+            props.navigate(`/${resumeData["resume-link"]}`);
+        }
+    }
+
+    useEffect(() => {
+        fetch("/resume.json")
+            .then(res => res.json())
+            .then(data => {
+                setResumeData(data)
+              }
+                )
+            .catch(err => console.log(err))
+    }, [])
+
+
+
+    // console.log('resume data is: ', resumeData)
 
     return (
     <section id="about">
         <div className="container about-wrapper">
             <div className="flex-item1">
-                {greet()}
+                <Greet />
                 <p className="">{text}</p>
                 <div className="contact-details">
                    <div className="details">
@@ -67,9 +61,14 @@ const About = () => {
                        </div>
                    </div>
                    <div className="resume">
-                      <button className="btn">
+                      {/* <a type="button" className="btn" href={resumeData["resume-link"]} >
                           <MdOutlineFileDownload className="download-icon" />
-                          Resume</button>
+                          Resume
+                      </a> */}
+                      <button className="btn" onClick={downloadResume} >
+                          <MdOutlineFileDownload className="download-icon" />
+                          Resume
+                      </button>
                    </div>
                 </div>
             </div>
@@ -88,4 +87,5 @@ const About = () => {
     )
 };
 
-export default About;
+
+export default withRouter(About);
