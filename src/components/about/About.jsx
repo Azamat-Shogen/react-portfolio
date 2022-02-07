@@ -15,15 +15,6 @@ const About = (props) => {
     const {git, linkedin} = footer;
     const [resumeData, setResumeData] = useState({});
 
-
-    console.log('props are: ', props)
-
-    const downloadResume = () => {
-        if(resumeData.hasOwnProperty("resume-link")){
-            props.navigate(`/${resumeData["resume-link"]}`);
-        }
-    }
-
     useEffect(() => {
         fetch("/resume.json")
             .then(res => res.json())
@@ -33,10 +24,6 @@ const About = (props) => {
                 )
             .catch(err => console.log(err))
     }, [])
-
-
-
-    // console.log('resume data is: ', resumeData)
 
     return (
     <section id="about">
@@ -61,14 +48,11 @@ const About = (props) => {
                        </div>
                    </div>
                    <div className="resume">
-                      {/* <a type="button" className="btn" href={resumeData["resume-link"]} >
+                   {resumeData.hasOwnProperty("resume-link") && 
+                      <a type="button" className="btn" href={resumeData["resume-link"]} >
                           <MdOutlineFileDownload className="download-icon" />
                           Resume
-                      </a> */}
-                      <button className="btn" onClick={downloadResume} >
-                          <MdOutlineFileDownload className="download-icon" />
-                          Resume
-                      </button>
+                      </a> }
                    </div>
                 </div>
             </div>
@@ -89,3 +73,4 @@ const About = (props) => {
 
 
 export default withRouter(About);
+

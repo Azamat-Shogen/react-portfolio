@@ -2,6 +2,9 @@
 // Simple validation check
 export const contactValidation = ({...args}) => {
     const {name, email, message} = args;
+    if (name.trim().length === 0 ) return {error: "Name is required", success: null};
+    if (email.trim().length === 0 ) return {error: "Email is required", success: null};
+    if (message.trim().length === 0 ) return {error: "Message is required", success: null};
     if (name.trim().length < 2 ) return {error: "Name is too short", success: null};
     if (email.trim().length < 5) return {error: "Email is too short", success: null};
     if (!email.includes("@")) return {error: "Not a valid email", success: null}
