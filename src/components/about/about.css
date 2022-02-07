@@ -181,7 +181,7 @@
 .resume {
     flex: 50%;
 }
-.resume > button {
+.resume > a {
     position: relative;
     width: 150px;
     margin-top: 2em;
@@ -193,7 +193,7 @@
     transition: 0.5s ease-in;
 }
 
-.resume > button:hover {
+.resume > a:hover {
     background-color: var(--btn-hover-clr);
     transform: scale(1.1);
     color: snow;
