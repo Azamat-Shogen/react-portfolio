@@ -123,6 +123,9 @@
 .flex-item1 p {
     max-width: 90%;
     line-height: 2em;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 .contact-details {
@@ -139,6 +142,12 @@
 
 .about-icons {
     display: inline;
+}
+
+.flip > h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 .about-icons a {
