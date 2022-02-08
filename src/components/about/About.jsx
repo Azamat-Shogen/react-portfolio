@@ -33,7 +33,7 @@ const About = (props) => {
                 <p className="">{text}</p>
                 <div className="contact-details">
                    <div className="details">
-                       <h4>Contact Details:</h4>
+                       <p>Contact Details:</p>
                        <span className="about-contact-text">Azamat Shogen<br/>
                        North Miami Beach, FL<br/>
                            azshog@gmail.com
