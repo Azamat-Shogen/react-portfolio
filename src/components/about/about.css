@@ -16,7 +16,6 @@
     --a:-7deg;   /* control the skewing*/
     --w:53px;    /* width of the pattern*/
     --h:55px;    /* height of the pattern*/
-
     --rad:radial-gradient(var(--s),var(--drop) 100%,transparent 100%)
 }
 #about:before,
@@ -217,7 +216,7 @@
 
 @media (max-width: 800px) {
     .flex-item2{
-        padding-top: 100px;
+        padding-top: 150px;
     }
     #about{
         padding-top: 50px;
@@ -238,5 +237,6 @@
 
     .flex-item1 p {
         max-width: 100%;
+        line-height: 1.5em;
     }
 }
