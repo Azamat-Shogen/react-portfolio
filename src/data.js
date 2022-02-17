@@ -15,7 +15,7 @@ export const skills = [
 ];
 
 export const about = {
-    text: "Hi there! Welcome to my porfolio."
+    text: "Hi there!  Welcome to my portfolio. Im a full-stack software developer from Miami FL. Codding is something that I truely have a passion for. I enjoy solving complex problems while always looking to improve my skills. I love  turning cool project ideas into reality . Get in touch with me, let's go!"
 }
 
 
@@ -24,7 +24,7 @@ export const projects = [
     {
         title: "UFC",
         subtitle: "Ufc rankings api",
-        description: "React, React-bootstrap, Python, Django, Docker, AWS",
+        description: "React, React-bootstrap, Python, Postgresql, Django, Docker, AWS",
         image: "./projects/project-2.gif",
         link: "https://ufc-rankings.netlify.app/"
     },
