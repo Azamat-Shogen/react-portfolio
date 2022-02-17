@@ -1,3 +1,3 @@
 # React Porfolio Project
 
-### Find live app here: 👉 [site](https://portfolio-az.netlify.app/)
+### Find deployed app here: 👉 [site](https://portfolio-az.netlify.app/)
