@@ -24,7 +24,7 @@ export const projects = [
     {
         title: "UFC",
         subtitle: "Ufc rankings api",
-        description: "React, React-bootstrap, Python, Django, Docker, AWS",
+        description: "React, React-bootstrap, Python, Postgresql, Django, Docker, AWS",
         image: "./projects/project-2.gif",
         link: "https://ufc-rankings.netlify.app/"
     },
