@@ -6,11 +6,8 @@
     height: auto;
     padding-top: 100px;
     background: var(--about-bg);
-
-}
-#about{
+    position: relative;
     overflow:hidden;
-
     --s:1px 2px; /* size of drop of water*/
     /*--c:#ccc;    !* color of the water*!*/
     --a:-7deg;   /* control the skewing*/
@@ -25,7 +22,7 @@
     z-index: 99;
     right: -20%;
     left: -20%;
-    top: 1%;
+    top: -10%;
 
     height:calc(100% + var(--h) + 10px); /* should be bigger than (100% + var(--h))*/
     background:
