@@ -62,7 +62,7 @@ export const projects = [
 
 export const footer = {
     email: "azshog@gmail.com",
-    git: "https://github.com/Azamat-Shogen?tab=overview&from=2022-02-01&to=2022-02-05",
+    git: "https://github.com/Azamat-Shogen",
     linkedin: "https://www.linkedin.com/in/azamat101/"
 }
 

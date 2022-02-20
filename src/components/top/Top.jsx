@@ -29,7 +29,7 @@ const Top = () => {
                 onClick={scrollToTop}
         >
                 <BsFillArrowUpSquareFill className="top-icon"
-                 // color="#35c6e7"
+                //  color="#35c6e7"
                 />
         </button>
     )
