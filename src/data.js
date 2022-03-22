@@ -51,13 +51,13 @@ export const projects = [
         image: "./projects/project-5.gif",
         link: "https://github.com/Azamat-Shogen/card_trick_python"
     },
-    {
-        title: "Progress Bar",
-        subtitle: "Mock API",
-        description: "React",
-        image: "./projects/project-4.gif",
-        link: "https://survey-demo.netlify.app/"
-    }
+//     {
+//         title: "Progress Bar",
+//         subtitle: "Mock API",
+//         description: "React",
+//         image: "./projects/project-4.gif",
+//         link: "https://survey-demo.netlify.app/"
+//     }
 ];
 
 export const footer = {
