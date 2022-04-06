@@ -20,14 +20,6 @@ export const about = {
 
 
 export const projects = [
-
-    {
-        title: "UFC",
-        subtitle: "Ufc rankings api",
-        description: "React, React-bootstrap, Python, Postgresql, Django, Docker, AWS",
-        image: "./projects/project-2.gif",
-        link: "https://ufc-rankings.netlify.app/"
-    },
     {
         title: "Card Trick",
         subtitle: "Game",
@@ -35,13 +27,26 @@ export const projects = [
         image: "./projects/project-3.gif",
         link: "https://c-game-az.netlify.app/"
     },
-
     {
         title: "Imc Permits Portal",
         subtitle: "Mern Stack",
         description: "React, Redux, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
         image: "./projects/project-1.gif",
         link: "https://imc-permits-portal.netlify.app/"
+    },
+    {
+        title: "Bean Machine",
+        subtitle: "Game",
+        description: "React, Javascript, Canvas",
+        image: "./projects/project-6.gif",
+        link: "https://bean-machine.netlify.app/"
+    },
+    {
+        title: "UFC",
+        subtitle: "Ufc rankings api",
+        description: "React, React-bootstrap, Python, Postgresql, Django, Docker, AWS",
+        image: "./projects/project-2.gif",
+        link: "https://ufc-rankings.netlify.app/"
     },
 
     {
