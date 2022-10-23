@@ -56,6 +56,14 @@ export const projects = [
         image: "./projects/project-5.gif",
         link: "https://github.com/Azamat-Shogen/card_trick_python"
     },
+
+    {
+        title: 'OS Permits Invoice generator',
+        subtitle: 'Mern Stack',
+        description: "React, Material UI, NodeJS, ExpressJS, MongoDB",
+        image: "./projects/project-N.gif",
+        link: "https://github.com/Azamat-Shogen/invoice-client"
+    }
 //     {
 //         title: "Progress Bar",
 //         subtitle: "Mock API",
