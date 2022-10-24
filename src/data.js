@@ -28,12 +28,13 @@ export const projects = [
         link: "https://c-game-az.netlify.app/"
     },
     {
-        title: "Imc Permits Portal",
-        subtitle: "Mern Stack",
-        description: "React, Redux, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
-        image: "./projects/project-1.gif",
-        link: "https://imc-permits-portal.netlify.app/"
+        title: 'OS Permits Invoice generator',
+        subtitle: 'Mern Stack',
+        description: "React, Material UI, NodeJS, ExpressJS, MongoDB",
+        image: "./projects/project-7.gif",
+        link: "https://github.com/Azamat-Shogen/invoice-client"
     },
+   
     {
         title: "Bean Machine",
         subtitle: "Game",
@@ -50,12 +51,22 @@ export const projects = [
     },
 
     {
+        title: "Imc Permits Portal",
+        subtitle: "Mern Stack",
+        description: "React, Redux, Material UI, NodeJS, ExpressJS, MongoDB, SendGrid",
+        image: "./projects/project-1.gif",
+        link: "https://imc-permits-portal.netlify.app/"
+    },
+
+    {
         title: "Card Trick ||",
         subtitle: "Console Game",
         description: "Python",
         image: "./projects/project-5.gif",
         link: "https://github.com/Azamat-Shogen/card_trick_python"
     },
+
+   
 //     {
 //         title: "Progress Bar",
 //         subtitle: "Mock API",
