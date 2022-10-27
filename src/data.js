@@ -32,7 +32,7 @@ export const projects = [
         subtitle: 'Mern Stack',
         description: "React, Material UI, NodeJS, ExpressJS, MongoDB",
         image: "./projects/project-7.gif",
-        link: "https://github.com/Azamat-Shogen/invoice-client"
+        link: "https://imc-invoice-generator.netlify.app/"
     },
    
     {
