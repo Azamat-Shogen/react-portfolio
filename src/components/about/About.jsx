@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React,{ useState, useEffect } from "react";
 import withRouter from "../../withRouter";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 export {about} from "../../data";
