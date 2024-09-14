@@ -35,8 +35,8 @@ const About = (props) => {
                    <div className="details">
                        <p>Contact Details:</p>
                        <span className="about-contact-text">Azamat Shogen<br/>
-                       North Miami Beach, FL<br/>
-                           azshog@gmail.com
+                        Miami, FL<br/>
+                        az.shogen.dev@gmail.com
                        </span> <br/>
                        <div className="about-icons">
                            <a href={git} style={{hover:{color: "blue"}}}>

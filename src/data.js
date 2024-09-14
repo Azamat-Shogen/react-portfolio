@@ -11,15 +11,26 @@ export const skills = [
     "Postgresql",
     "Django",
     "MongoDB",
-    "TypeScript"
+    "TypeScript",
+    "Automation Testing",
+    "Pytest",
+    "Selenium",
+    "Jenkins"
 ];
 
 export const about = {
-    text: "Hi there!  Welcome to my portfolio. Im a full-stack software developer from Miami FL. Codding is something that I truely have a passion for. I enjoy solving complex problems while always looking to improve my skills. I love  turning cool project ideas into reality . Get in touch with me."
+    text: "Hi there! I’m a software developer based in Miami, FL, with a strong passion for coding and problem-solving. I thrive on tackling complex challenges and am constantly seeking to enhance my skills. Let's connect!"
 }
 
 
 export const projects = [
+    {
+        title: "Admin Dashboard",
+        subtitle: "Landing Page / admin-client portal",
+        description: "TypeScript, NextJs, Server actions, Versel",
+        image: "./projects/project-8.gif",
+        link: "https://www.ipro-permits.com/"
+    },
     {
         title: "Card Trick",
         subtitle: "Game",
@@ -27,18 +38,11 @@ export const projects = [
         image: "./projects/project-3.gif",
         link: "https://c-game-az.netlify.app/"
     },
-    {
-        title: 'OS Permits Invoice generator',
-        subtitle: 'Mern Stack',
-        description: "React, Material UI, NodeJS, ExpressJS, MongoDB",
-        image: "./projects/project-7.gif",
-        link: "https://imc-invoice-generator.netlify.app/"
-    },
    
     {
         title: "Bean Machine",
         subtitle: "Game",
-        description: "React, Javascript, Canvas",
+        description: "React, JavaScript, Canvas",
         image: "./projects/project-6.gif",
         link: "https://bean-machine.netlify.app/"
     },
@@ -66,18 +70,11 @@ export const projects = [
         link: "https://github.com/Azamat-Shogen/card_trick_python"
     },
 
-   
-//     {
-//         title: "Progress Bar",
-//         subtitle: "Mock API",
-//         description: "React",
-//         image: "./projects/project-4.gif",
-//         link: "https://survey-demo.netlify.app/"
-//     }
+ 
 ];
 
 export const footer = {
-    email: "azshog@gmail.com",
+    email: "az.shogen.dev@gmail.com",
     git: "https://github.com/Azamat-Shogen",
     linkedin: "https://www.linkedin.com/in/azamat101/"
 }

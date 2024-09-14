@@ -30,7 +30,7 @@ const Greet = () => {
             />
             <div> </div>
             <AnimationOnScroll className="flip" initiallyVisible={true} animateIn="animate__flip">
-                <h3>Full-Stack Developer</h3>
+                <h3>Software Developer</h3>
             </AnimationOnScroll>
         </div>
     )
