@@ -4,30 +4,36 @@ export const skills = [
     "React",
     "Redux",
     "Python",
-    "Html",
-    "Css",
-    "NodeJS",
-    "ExpressJs",
-    "Postgresql",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
     "Django",
     "MongoDB",
     "TypeScript",
     "Automation Testing",
     "Pytest",
     "Selenium",
-    "Jenkins"
+    "Jenkins",
+    "Next.js",
+    "Docker",
+    "GitHub",
+    "GitLab"
 ];
 
+
 export const about = {
-    text: "Hi there! I’m a software developer based in Miami, FL, with a strong passion for coding and problem-solving. I thrive on tackling complex challenges and am constantly seeking to enhance my skills. Let's connect!"
+    text: "Hello! I'm a dedicated software developer with a passion for creating efficient and innovative solutions. I love tackling new challenges and continuously expanding my skill set. Always open to collaboration and learning opportunities, feel free to connect!"
 }
+
 
 
 export const projects = [
     {
         title: "Admin Dashboard",
         subtitle: "Landing Page / admin-client portal",
-        description: "TypeScript, NextJs, Server actions, Versel",
+        description: "TypeScript, NextJs, Server actions, ShadcnUI, Prisma, Versel",
         image: "./projects/project-8.gif",
         link: "https://www.ipro-permits.com/"
     },

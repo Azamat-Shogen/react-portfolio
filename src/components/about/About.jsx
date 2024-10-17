@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import withRouter from "../../withRouter";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 export {about} from "../../data";
@@ -49,7 +49,12 @@ const About = (props) => {
                    </div>
                    <div className="resume">
                    {resumeData.hasOwnProperty("resume-link") && 
-                      <a type="button" className="btn" href={resumeData["resume-link"]} >
+                      <a type="button" 
+                         className="btn" 
+                         href={resumeData["resume-link"]}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         >
                           <MdOutlineFileDownload className="download-icon" />
                           Resume
                       </a> }
