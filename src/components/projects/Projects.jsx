@@ -1,7 +1,6 @@
 import React from "react";
 import {FaCode} from "react-icons/fa";
 import {projects} from "../../data";
-import {BsEyeFill} from "react-icons/bs"
 import {BsFillArrowUpRightSquareFill} from "react-icons/bs"
 import "./projects.css";
 
@@ -26,8 +25,8 @@ const Projects = () => {
                               <h3>{project.title}</h3>
                               <h4>{project.subtitle}</h4>
                               <p>{project.description}</p>
-                              <a href={project.link}>
-                                  <BsFillArrowUpRightSquareFill className="view-icon"  />
+                              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                  <BsFillArrowUpRightSquareFill className="view-icon" />
                               </a>
                           </div>
                       </div>
