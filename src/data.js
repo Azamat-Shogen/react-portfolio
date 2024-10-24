@@ -24,18 +24,24 @@ export const skills = [
 
 
 export const about = {
-    text: "Hello! I'm a dedicated software developer with a passion for creating efficient and innovative solutions. I love tackling new challenges and continuously expanding my skill set. Always open to collaboration and learning opportunities, feel free to connect!"
+    text: "Hello! I'm a dedicated software engineer with a passion for building efficient, reliable, and innovative solutions. I thrive on tackling complex challenges and continuously advancing my skills in software development and automation testing. Always open to collaboration and learning opportunities, feel free to connect!"
 }
-
 
 
 export const projects = [
     {
         title: "Admin Dashboard",
         subtitle: "Landing Page / admin-client portal",
-        description: "TypeScript, NextJs, Server actions, ShadcnUI, Prisma, Versel",
+        description: "TypeScript, NextJs, Server actions, ShadcnUI, Prisma, TailwindCSS",
         image: "./projects/project-8.gif",
         link: "https://www.ipro-permits.com/"
+    },
+    {
+        title: "Automation Dashboard",
+        subtitle: "Tests reports for an ecom store",
+        description: "Nextjs, TypeScript, ShadcnUI, TailwindCSS, Python, Pytest, Selenium, Flask, Docker",
+        image: "./projects/project-9.gif",
+        link: "https://store-tests-reports.netlify.app/"
     },
     {
         title: "Card Trick",
